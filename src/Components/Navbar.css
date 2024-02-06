@@ -1,0 +1,220 @@
+:root{
+    --PrimaryColor:hsl(199,100%,33%);
+    --SecondaryColor:hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right,hsl(199,100%,33%),hsl(187,85%,43%));
+    --whiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,36%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --grayText:rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG:rgb(225,225,235);
+}
+
+
+
+.header{
+    display:flex;
+    align-items: center;
+    background-color:rgb(0, 0, 0);
+    position:absolute;
+    justify-content:space-between;
+    width:100%; 
+    height:70px;
+    z-index: 1000;
+}
+
+@media screen and (max-width:768px) {
+   .header{
+    box-shadow: 0 2px 4px rgba(2,15,29,0.904);
+    margin-top:0px;
+   }
+ }
+
+@media screen and (min-width:768px) {
+   .toggleNavbar,.colseNavbar{
+   display:none;
+   }
+ }
+
+@media screen and (min-width:768px) {
+   .navLists{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   margin-left:900px;
+   }
+ }
+    
+ @media screen and (min-width:768px) {
+    .navlink{
+    padding:0 0.7rem;
+    }
+  }
+ 
+
+
+
+.logo{
+    color:var(--blackColor);
+    font-weight:600;
+    cursor:pointer;
+    align-items:center;
+    justify-content:center;
+
+}   
+
+.logoDiv{
+    position: absolute;
+    left:5rem;
+}
+
+
+
+@media screen and (max-width:768px) {
+   .logoDiv{
+  left:-7.5rem;
+  position: relative;
+}
+    }
+    
+
+   
+@media screen and (max-width:768px) {
+.navBar{
+    position:absolute;
+    background:rgb(202, 202, 248);
+    height:max-content;
+    width:80%;
+    border-radius:1rem;
+    top:-100rem;
+    padding:1rem;
+    transform: translate(0%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2,15,29,0.904);
+    transition:0.5s ease-in-out;
+
+   
+}
+
+
+    .navLists{
+        flex-direction:column;
+        justify-content:center;
+        width:100%;
+        margin: auto;
+        padding:.5rem 0;
+    }
+        
+
+.navItem{
+    padding:0.8rem;
+}
+
+.navLink{
+    color:black;
+    font-size:.9rem;
+    font-weight:600;   
+    text-align:center;
+    margin-right:-10px;
+}
+
+}
+
+#loginbtn{
+    color:blue;
+    box-shadow:2px 0px 10px rgb(246, 203, 203);
+    border-radius:10px;
+    padding:3px 15px ;
+    margin-left:10px;
+}
+
+@media screen and (max-width:400px){
+    #loginbtn{
+        margin-left:0px;
+    }
+}
+
+#loginbtn:hover{
+    background-color:rgb(236, 158, 13);
+    color:black;
+}
+
+.navLink:hover{
+    color:var(--primaryColor);
+}
+
+
+
+@media screen and (max-width:768px) {
+    .flex{
+        flex-direction:column;
+    }
+    }
+    
+.btnnav{
+background-color:hsl(187, 100%, 50%);
+padding:0.7rem;
+border-radius:20px;
+border:0px solid white;
+}
+
+a{
+    font-weight:bolder;
+    font-size:22px;
+    
+}
+
+.colseNavbar{
+    top:1rem;
+    position:absolute;
+    color:var(--PrimaryColor);
+    right:1.5rem;
+}
+
+.icon{
+   display: none; 
+}
+
+.logoDiv h1:hover{
+    color:rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width:768px) {
+    .icon{
+    display:inline;
+    font-size:25px;
+    color:var(--PrimaryColor);
+    transform: translateY(-2px);
+    }
+    }
+    
+
+    #portfoilo{
+        font-size:28px;
+        font-weight:bold;
+    }
+
+    @media screen and (max-width:768px) {
+        #portfoilo{
+        margin-top:15px;
+        margin-left:60px;
+        }
+    }
+    
+
+@media screen and (max-width:768px) {
+    .toggleNavbar{
+    top:1rem;
+    position: absolute;
+    right:2.5rem; 
+    }
+    .activeNavbar{
+        top:5rem; 
+     }
+    }
+    
+    

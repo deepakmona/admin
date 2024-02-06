@@ -1,0 +1,35 @@
+.card{
+    width:200px;
+    height:130px;
+    margin-top:70px;
+    border-radius:10px;
+    background-color:rgb(4, 37, 252);
+}
+
+@media screen and (max-width:400px) {
+    .card{
+        width:150px;
+        height:120px;
+        
+    }
+}
+
+.card h5{
+    color:rgb(255, 255, 255);
+    text-align:center;
+    margin-top:10px;
+
+}
+
+.card p{
+    color:rgb(255, 255, 255);
+    margin-top:20px;
+    margin-left:50px;
+}
+
+
+@media screen and (max-width:400px) {
+    .card p{
+        margin-left:20px;
+    }
+}
